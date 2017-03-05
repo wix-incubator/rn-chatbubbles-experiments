@@ -1,35 +1,35 @@
 import _ from 'lodash';
 
-const NUM_BUBBLES = 1000;
+const NUM_BUBBLES = 2000;
 
 export function generateDataset() {
   const rowsById = {};
   const rowIds = [];
   for (let i=0; i<NUM_BUBBLES; i++) {
-    const id = _generateId();
-    rowsById[id] = _generateBubble();
+    const id = _generateId(i);
+    rowsById[id] = _generateBubble(i);
     rowIds.push(id);
   }
   return { rowsById, rowIds };
 }
 
-function _generateId() {
+function _generateId(i) {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
     return v.toString(16);
   });
 }
 
-function _generateBubble() {
+function _generateBubble(i) {
   const r = Math.random();
   if (r < 0.75) {
-    return _generateTextBubble();
+    return _generateTextBubble(i);
   } else {
-    return _generateImageBubble();
+    return _generateImageBubble(i);
   }
 }
 
-function _generateTextBubble() {
+function _generateTextBubble(i) {
   const words = [
     'lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur',
 		'adipiscing', 'elit', 'curabitur', 'vel', 'hendrerit', 'libero',
@@ -63,21 +63,23 @@ function _generateTextBubble() {
 		'elementum', 'tempor', 'risus', 'cras'
   ];
   const numWords = _.random(2, 20);
-  const sentence = [];
+  const sentence = [i];
   for (let i=0; i<numWords; i++) {
     sentence.push(_.sample(words));
   }
   return {
     type: 'text',
     text: sentence.join(' '),
-    side: _.sample(['left', 'right'])
+    side: _.sample(['left', 'right']),
+    index: i
   };
 }
 
-function _generateImageBubble() {
+function _generateImageBubble(i) {
   return {
     type: 'image',
     url: 'https://loremflickr.com/250/150?random=' + _.random(1, NUM_BUBBLES),
-    side: _.sample(['left', 'right'])
+    side: _.sample(['left', 'right']),
+    index: i
   };
 }

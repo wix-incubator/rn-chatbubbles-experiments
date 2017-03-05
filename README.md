@@ -12,7 +12,7 @@ Experiments for efficient chat bubbles list view in React Native
 
 `rowIds` - array of row ids (in the order that they should appear)
 
-You will receive a large number of rows (around 1000)
+You will receive a large number of rows (around 2000)
 
 * The structure of the row data is:
 
