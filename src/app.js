@@ -8,6 +8,11 @@ import {
   Text,
   ScrollView
 } from 'react-native';
+import * as dataset from './dataset';
+
+const {rowsById, rowIds} = dataset.generateDataset();
+console.log(rowsById);
+console.log(rowIds);
 
 import JsListView from './js-listview';
 
@@ -41,7 +46,7 @@ export default class example extends Component {
   renderContent() {
     if (this.state.currentExample) {
       const ExampleComponent = this.state.currentExample;
-      return <ExampleComponent />;
+      return <ExampleComponent rowsById={rowsById} rowIds={rowIds} />;
     }
 
     return (
