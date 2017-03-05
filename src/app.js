@@ -11,8 +11,6 @@ import {
 import * as dataset from './dataset';
 
 const {rowsById, rowIds} = dataset.generateDataset();
-console.log(rowsById);
-console.log(rowIds);
 
 import JsListView from './js-listview';
 
