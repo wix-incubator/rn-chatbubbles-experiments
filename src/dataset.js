@@ -77,7 +77,7 @@ function _generateTextBubble() {
 function _generateImageBubble() {
   return {
     type: 'image',
-    url: 'https://loremflickr.com/250/150?random=' + _.random(1, 999999),
+    url: 'https://loremflickr.com/250/150?random=' + _.random(1, NUM_BUBBLES),
     side: _.sample(['left', 'right'])
   };
 }
