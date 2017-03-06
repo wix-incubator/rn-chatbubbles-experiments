@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import * as dataset from './dataset';
 
-const {rowsById, rowIds} = dataset.generateDataset();
+const { rowsById, rowIds } = dataset.generateDataset();
 
 import JsListView from './js-listview';
 
@@ -18,53 +18,23 @@ export default class example extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentExample: undefined
+      currentExample: JsListView
     }
   }
 
   render() {
     return (
       <View style={styles.container}>
-
-        <View style={styles.header}>
-          <TouchableOpacity onPress={this.onMenuPress.bind(this)}>
-            <Image style={styles.menuIcon} source={require('../img/icon-menu.png')} />
-          </TouchableOpacity>
-          <Text style={styles.headerTitle}>Chat Bubbles Experiments</Text>
-        </View>
-
         <View style={styles.body}>
           {this.renderContent()}
         </View>
-
       </View>
     );
   }
 
   renderContent() {
-    if (this.state.currentExample) {
-      const ExampleComponent = this.state.currentExample;
-      return <ExampleComponent rowsById={rowsById} rowIds={rowIds} />;
-    }
-
-    return (
-      <ScrollView style={styles.menuContainer}>
-        <TouchableOpacity onPress={this.onExamplePress.bind(this, JsListView)}>
-          <Text style={styles.button}>JavaScript ListView</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={this.onExamplePress.bind(this, JsListView)}>
-          <Text style={styles.button}>add yours here</Text>
-        </TouchableOpacity>
-      </ScrollView>
-    );
-  }
-
-  onExamplePress(currentExample) {
-    this.setState({currentExample});
-  }
-
-  onMenuPress() {
-    this.setState({currentExample: undefined});
+    const ExampleComponent = this.state.currentExample;
+    return (<ExampleComponent rowsById={rowsById} rowIds={rowIds} />);
   }
 }
 
@@ -109,4 +79,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('chatbubbles', () => example);
+AppRegistry.registerComponent('chatbubbles_js_naive', () => example);

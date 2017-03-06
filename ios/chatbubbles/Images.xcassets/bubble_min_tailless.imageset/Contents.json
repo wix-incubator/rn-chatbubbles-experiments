@@ -1,0 +1,68 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 16,
+          "top" : 18,
+          "right" : 27,
+          "left" : 20
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "bubble_min_tailless.png",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 34,
+          "top" : 35,
+          "right" : 54,
+          "left" : 41
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "bubble_min_tailless@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 51,
+          "top" : 53,
+          "right" : 81,
+          "left" : 62
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "bubble_min_tailless@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
