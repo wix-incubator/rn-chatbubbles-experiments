@@ -6,23 +6,23 @@
 //  Copyright © 2017 Facebook. All rights reserved.
 //
 
-#import "InNativeItWouldNotHaveHappenedViewController.h"
+#import "InNativeItWouldNotHaveHappenedViewController2.h"
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
-@interface InNativeItWouldNotHaveHappenedViewController ()
+@interface InNativeItWouldNotHaveHappenedViewController2 ()
 
 @end
 
-@implementation InNativeItWouldNotHaveHappenedViewController
+@implementation InNativeItWouldNotHaveHappenedViewController2
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
 	
 	NSURL* jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-	RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"native" initialProperties:nil launchOptions:nil];
+	RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"native_ml" initialProperties:nil launchOptions:nil];
 	rootView.translatesAutoresizingMaskIntoConstraints = NO;
 	
 	[self.view addSubview:rootView];

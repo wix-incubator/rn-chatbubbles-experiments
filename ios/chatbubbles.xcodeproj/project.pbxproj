@@ -26,6 +26,9 @@
 		3999EBB61E6D678D00E35D1B /* ALBubblesViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3999EBB51E6D678D00E35D1B /* ALBubblesViewManager.m */; };
 		3999EBB91E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3999EBB81E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.m */; };
 		3999EBC21E6D75E000E35D1B /* NativeCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3999EBC11E6D75E000E35D1B /* NativeCells.storyboard */; };
+		3999EBC91E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3999EBC81E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.m */; };
+		3999EBCC1E6DCA5B00E35D1B /* MLBubblesViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3999EBCB1E6DCA5B00E35D1B /* MLBubblesViewManager.m */; };
+		3999EBCE1E6DCAF900E35D1B /* NativeCellsML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3999EBCD1E6DCAF900E35D1B /* NativeCellsML.storyboard */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
@@ -234,6 +237,11 @@
 		3999EBB71E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InNativeItWouldNotHaveHappenedViewController.h; sourceTree = "<group>"; };
 		3999EBB81E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InNativeItWouldNotHaveHappenedViewController.m; sourceTree = "<group>"; };
 		3999EBC11E6D75E000E35D1B /* NativeCells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeCells.storyboard; sourceTree = "<group>"; };
+		3999EBC71E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InNativeItWouldNotHaveHappenedViewController2.h; sourceTree = "<group>"; };
+		3999EBC81E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InNativeItWouldNotHaveHappenedViewController2.m; sourceTree = "<group>"; };
+		3999EBCA1E6DCA5B00E35D1B /* MLBubblesViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBubblesViewManager.h; sourceTree = "<group>"; };
+		3999EBCB1E6DCA5B00E35D1B /* MLBubblesViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBubblesViewManager.m; sourceTree = "<group>"; };
+		3999EBCD1E6DCAF900E35D1B /* NativeCellsML.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeCellsML.storyboard; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -329,14 +337,18 @@
 				3999EBA41E6D5C7C00E35D1B /* ChatBubblesScene.storyboard */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				3999EBA61E6D5D0900E35D1B /* JSNaiveViewController.h */,
-				3999EBA71E6D5D0900E35D1B /* JSNaiveViewController.m */,
 				3999EBB41E6D678D00E35D1B /* ALBubblesViewManager.h */,
 				3999EBB51E6D678D00E35D1B /* ALBubblesViewManager.m */,
+				3999EBCA1E6DCA5B00E35D1B /* MLBubblesViewManager.h */,
+				3999EBCB1E6DCA5B00E35D1B /* MLBubblesViewManager.m */,
 				3999EBB01E6D66BD00E35D1B /* BubbleTableViewCell.h */,
 				3999EBB11E6D66BD00E35D1B /* BubbleTableViewCell.m */,
+				3999EBA61E6D5D0900E35D1B /* JSNaiveViewController.h */,
+				3999EBA71E6D5D0900E35D1B /* JSNaiveViewController.m */,
 				3999EBB71E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.h */,
 				3999EBB81E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.m */,
+				3999EBC71E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.h */,
+				3999EBC81E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -363,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				3999EBC11E6D75E000E35D1B /* NativeCells.storyboard */,
+				3999EBCD1E6DCAF900E35D1B /* NativeCellsML.storyboard */,
 			);
 			name = "Native Cells";
 			sourceTree = "<group>";
@@ -717,6 +730,7 @@
 				3999EBA51E6D5C7C00E35D1B /* ChatBubblesScene.storyboard in Resources */,
 				3999EBA91E6D5E9B00E35D1B /* Info.plist in Resources */,
 				3999EBC21E6D75E000E35D1B /* NativeCells.storyboard in Resources */,
+				3999EBCE1E6DCAF900E35D1B /* NativeCellsML.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,10 +760,12 @@
 			files = (
 				3999EBB91E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.m in Sources */,
 				3999EBB31E6D66BD00E35D1B /* BubbleTableViewCell.m in Sources */,
+				3999EBC91E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.m in Sources */,
 				3999EBB61E6D678D00E35D1B /* ALBubblesViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				3999EBA81E6D5D0900E35D1B /* JSNaiveViewController.m in Sources */,
+				3999EBCC1E6DCA5B00E35D1B /* MLBubblesViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

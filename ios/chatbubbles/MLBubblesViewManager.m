@@ -6,16 +6,16 @@
 //  Copyright © 2017 Facebook. All rights reserved.
 //
 
-#import "ALBubblesViewManager.h"
+#import "MLBubblesViewManager.h"
 #import "BubbleTableViewCell.h"
 
 @import UIKit;
 
-@interface ALBubblesViewManager () <UITableViewDataSource, UITableViewDelegate>
+@interface MLBubblesViewManager () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
-@implementation ALBubblesViewManager
+@implementation MLBubblesViewManager
 {
 	UITableView* _tableView;
 	NSArray<NSDictionary*>* _bubbles;
@@ -28,7 +28,7 @@
 		return _tableView;
 	}
 	
-	_tableView = [[[UIStoryboard storyboardWithName:@"NativeCells" bundle:nil] instantiateInitialViewController] tableView];
+	_tableView = [[[UIStoryboard storyboardWithName:@"NativeCellsML" bundle:nil] instantiateInitialViewController] tableView];
 	[_tableView removeFromSuperview];
 	_tableView.dataSource = self;
 	_tableView.delegate = self;
@@ -80,11 +80,16 @@ RCT_EXPORT_MODULE()
 	return cell;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//	NSString* bubbleText = self.bubbles[indexPath.row].text;
-//
-//	return [bubbleText boundingRectWithSize:CGSizeMake(300, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]} context:nil].size.height + 32 + 2;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	NSDictionary* bubble = _bubbles[indexPath.row];
+	
+	if([bubble[@"type"] isEqualToString:@"image"])
+	{
+		return 208;
+	}
+
+	return [bubble[@"text"] boundingRectWithSize:CGSizeMake(250, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]} context:nil].size.height + 8 + 16;
+}
 
 @end
