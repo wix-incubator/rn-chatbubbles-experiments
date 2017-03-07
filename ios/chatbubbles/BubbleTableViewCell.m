@@ -60,4 +60,20 @@
 	[_pendingImageTask resume];
 }
 
+- (void)addReactForIndexPath:(NSIndexPath*)indexPath bridge:(RCTBridge*)bridge moduleName:(NSString*)moduleName initialProperties:(NSDictionary*)props
+{
+	self.reactView = [[RCTRootView alloc] initWithBridge:bridge moduleName:moduleName initialProperties:props];
+	self.reactView.translatesAutoresizingMaskIntoConstraints = NO;
+	
+	CGSize intrinsicSize = CGSizeMake(200, 200);
+	[NSLayoutConstraint activateConstraints:@[[self.reactView.widthAnchor constraintEqualToConstant:intrinsicSize.width],
+											  [self.reactView.heightAnchor constraintEqualToConstant:intrinsicSize.height]]];
+	
+	[self.contentView addSubview:self.reactView];
+	[NSLayoutConstraint activateConstraints:@[[self.contentView.rightAnchor constraintEqualToAnchor:self.reactView.rightAnchor],
+											  [self.contentView.topAnchor constraintEqualToAnchor:self.reactView.topAnchor],
+											  [self.contentView.bottomAnchor constraintEqualToAnchor:self.reactView.bottomAnchor]]];
+}
+
+
 @end

@@ -18,9 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="1Tn-pF-jjz">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BubbleCell" rowHeight="120" id="6ti-Ba-7yd" customClass="BubbleTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ti-Ba-7yd" id="myT-x1-Vog">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
@@ -44,7 +49,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherBubbleCell" rowHeight="120" id="Nh6-pp-pKb" customClass="BubbleTableViewCell">
-                                <rect key="frame" x="0.0" y="148" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="160" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nh6-pp-pKb" id="1YY-2T-sYY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
@@ -68,7 +73,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BubbleCellImage" rowHeight="208" id="0yx-WL-yBu" customClass="BubbleTableViewCell">
-                                <rect key="frame" x="0.0" y="268" width="375" height="208"/>
+                                <rect key="frame" x="0.0" y="280" width="375" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0yx-WL-yBu" id="ZFo-d3-59P">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="207.5"/>
@@ -86,7 +91,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherBubbleCellImage" rowHeight="208" id="8yA-MJ-bmk" customClass="BubbleTableViewCell">
-                                <rect key="frame" x="0.0" y="476" width="375" height="208"/>
+                                <rect key="frame" x="0.0" y="488" width="375" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8yA-MJ-bmk" id="1QO-R4-RuI">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="207.5"/>

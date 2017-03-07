@@ -9,6 +9,9 @@
 
 #import "AppDelegate.h"
 
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTBridge.h>
+
 #import <sys/sysctl.h>
 #import <mach/mach.h>
 
@@ -18,12 +21,37 @@
 	UILabel* _infoLabel;
 	NSByteCountFormatter* _byteFormatter;
 	
-	
 	processor_info_array_t cpuInfo, prevCpuInfo;
 	mach_msg_type_number_t numCpuInfo, numPrevCpuInfo;
 	unsigned numCPUs;
 	NSTimer *updateTimer;
 	NSLock *CPUUsageLock;
+	
+	RCTBridge* _bridge;
+	BOOL _slowdownEnabled;
+}
+
+- (void)switchValueDidChange:(UISwitch*)sender
+{
+	_slowdownEnabled = sender.isOn;
+}
+
+- (BOOL)isSlowdownEnabled
+{
+	return _slowdownEnabled;
+}
+
+- (RCTBridge*)bridge
+{
+	if(_bridge)
+	{
+		return _bridge;
+	}
+	
+	NSURL* jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+	_bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation moduleProvider:nil launchOptions:nil];
+	
+	return _bridge;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

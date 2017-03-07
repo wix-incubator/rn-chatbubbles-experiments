@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  View,
-  StyleSheet,
-  requireNativeComponent
+	AppRegistry,
+	View,
+	StyleSheet,
+	requireNativeComponent
 } from 'react-native';
 import * as dataset from './dataset';
 
@@ -12,28 +12,28 @@ const bubbles = dataset.generateSimpleDataset();
 const MLBubblesView = requireNativeComponent('MLBubblesView', null);
 
 export default class nativeMLExample extends Component {
-  constructor(props) {
-    super(props);
-  }
+	constructor(props) {
+		super(props);
+	}
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <MLBubblesView style={styles.body} bubbles={bubbles} />
-      </View>
-    );
-  }
+	render() {
+		return (
+			<View style={styles.container}>
+				<MLBubblesView style={styles.body} bubbles={bubbles} />
+			</View>
+		);
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white'
-  },
-  body: {
-    flex: 1,
-    zIndex: 1000
-  }
+	container: {
+		flex: 1,
+		backgroundColor: 'white'
+	},
+	body: {
+		flex: 1,
+		zIndex: 1000
+	}
 });
 
 AppRegistry.registerComponent('native_ml', () => nativeMLExample);

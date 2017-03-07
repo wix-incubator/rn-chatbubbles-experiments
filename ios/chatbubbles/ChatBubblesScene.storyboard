@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="JavaScript - Naive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tVY-e3-nWq">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="JavaScript - ListView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tVY-e3-nWq">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -60,14 +60,18 @@
                                             <segue destination="GmY-Wb-MrC" kind="show" id="VqU-qJ-RrN"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="x4b-Kb-et7" style="IBUITableViewCellStyleDefault" id="SFv-os-et7">
-                                        <rect key="frame" x="0.0" y="123" width="375" height="44"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Djc-29-nWH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KSQ-jA-XIJ" style="IBUITableViewCellStyleDefault" id="4gi-8W-WYl">
+                                        <rect key="frame" x="0.0" y="159" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SFv-os-et7" id="Ikp-2m-f75">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4gi-8W-WYl" id="rXu-SA-fnY">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Native - Manual Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x4b-Kb-et7">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Discotheque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KSQ-jA-XIJ">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -77,7 +81,31 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="hWM-Nw-59d" kind="show" id="VHt-XZ-wVh"/>
+                                            <segue destination="pap-8M-Od4" kind="show" id="qr6-92-kit"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="LOk-gp-NKt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pxS-f6-mGF" style="IBUITableViewCellStyleDefault" id="qHP-OE-dyx">
+                                        <rect key="frame" x="0.0" y="239" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qHP-OE-dyx" id="Z3i-Jz-NAz">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Native - Manual Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pxS-f6-mGF">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hWM-Nw-59d" kind="show" id="gHr-jI-k3G"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -88,11 +116,22 @@
                             <outlet property="delegate" destination="Kwh-DU-eKy" id="JBT-MF-XNR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chat Bubbles" id="GLD-qZ-Nsg"/>
+                    <navigationItem key="navigationItem" title="Chat Bubbles" id="GLD-qZ-Nsg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="hKB-w8-sFu">
+                            <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="cmc-sD-IGq">
+                                <rect key="frame" x="310" y="6" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switchValueDidChange:" destination="Iio-5W-TRf" eventType="valueChanged" id="yyq-7u-pk6"/>
+                                </connections>
+                            </switch>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iio-5W-TRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="495" y="123"/>
+            <point key="canvasLocation" x="876" y="166"/>
         </scene>
         <!--In Native It Would Not Have Happened View Controller2-->
         <scene sceneID="nS0-dc-iXt">
@@ -110,7 +149,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xm3-Ij-1aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546" y="956"/>
+            <point key="canvasLocation" x="2068" y="205"/>
+        </scene>
+        <!--Bubbles View Controller-->
+        <scene sceneID="X8U-Zi-zDF">
+            <objects>
+                <tableViewController id="pap-8M-Od4" customClass="ALBubblesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JjL-BO-lkD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="pap-8M-Od4" id="1MO-hY-B3n"/>
+                            <outlet property="delegate" destination="pap-8M-Od4" id="qSv-9v-39R"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qi0-SG-2KF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="1045"/>
         </scene>
         <!--In Native It Would Not Have Happened View Controller-->
         <scene sceneID="rlx-Pw-4Fb">
@@ -128,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fc3-3X-hTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="510"/>
+            <point key="canvasLocation" x="1353" y="622"/>
         </scene>
         <!--Naive View Controller-->
         <scene sceneID="bUK-6w-m6L">

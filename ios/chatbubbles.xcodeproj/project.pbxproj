@@ -19,6 +19,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		390B3A621E6EB4A90087267C /* ALBubblesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B3A611E6EB4A90087267C /* ALBubblesViewController.m */; };
 		3999EBA51E6D5C7C00E35D1B /* ChatBubblesScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3999EBA41E6D5C7C00E35D1B /* ChatBubblesScene.storyboard */; };
 		3999EBA81E6D5D0900E35D1B /* JSNaiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3999EBA71E6D5D0900E35D1B /* JSNaiveViewController.m */; };
 		3999EBA91E6D5E9B00E35D1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB61A68108700A75B9A /* Info.plist */; };
@@ -227,6 +228,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		390B3A601E6EB4A90087267C /* ALBubblesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBubblesViewController.h; sourceTree = "<group>"; };
+		390B3A611E6EB4A90087267C /* ALBubblesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBubblesViewController.m; sourceTree = "<group>"; };
 		3999EBA41E6D5C7C00E35D1B /* ChatBubblesScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatBubblesScene.storyboard; sourceTree = "<group>"; };
 		3999EBA61E6D5D0900E35D1B /* JSNaiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNaiveViewController.h; sourceTree = "<group>"; };
 		3999EBA71E6D5D0900E35D1B /* JSNaiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNaiveViewController.m; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				3999EBB81E6D6BAC00E35D1B /* InNativeItWouldNotHaveHappenedViewController.m */,
 				3999EBC71E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.h */,
 				3999EBC81E6DC9FC00E35D1B /* InNativeItWouldNotHaveHappenedViewController2.m */,
+				390B3A601E6EB4A90087267C /* ALBubblesViewController.h */,
+				390B3A611E6EB4A90087267C /* ALBubblesViewController.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -764,6 +769,7 @@
 				3999EBB61E6D678D00E35D1B /* ALBubblesViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				390B3A621E6EB4A90087267C /* ALBubblesViewController.m in Sources */,
 				3999EBA81E6D5D0900E35D1B /* JSNaiveViewController.m in Sources */,
 				3999EBCC1E6DCA5B00E35D1B /* MLBubblesViewManager.m in Sources */,
 			);

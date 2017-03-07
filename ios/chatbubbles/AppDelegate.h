@@ -9,8 +9,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class RCTBridge;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong, readonly) RCTBridge* bridge;
+@property (nonatomic, readonly, getter=isSlowdownEnabled) BOOL slowdownEnabled;
 
 @end

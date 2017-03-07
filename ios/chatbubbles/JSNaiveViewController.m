@@ -7,8 +7,7 @@
 //
 
 #import "JSNaiveViewController.h"
-
-#import <React/RCTBundleURLProvider.h>
+#import "AppDelegate.h"
 #import <React/RCTRootView.h>
 
 @interface JSNaiveViewController ()
@@ -20,9 +19,9 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	
-	NSURL* jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-	RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"chatbubbles_js_naive" initialProperties:nil launchOptions:nil];
+
+	AppDelegate* appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+	RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:appDelegate.bridge moduleName:@"chatbubbles_js_naive" initialProperties:@{@"isSlowdownEnabled": @(appDelegate.isSlowdownEnabled)}];
 	rootView.translatesAutoresizingMaskIntoConstraints = NO;
 	
 	[self.view addSubview:rootView];
